@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  div
+    ul
+      each val in messages
+        div(class=['messageWrapper']) 
+          a(href="/"): li(class=['user']) #{val.user}
+          img(class=['avatar'] src=val.avatar)
+          li(class=['added']) #{val.added}
+          br
+          li(class=['text']) #{val.text}
+  a(href="/new") New Message
