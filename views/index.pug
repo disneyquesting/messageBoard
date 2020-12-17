@@ -7,7 +7,7 @@ block content
     ul
       each val in messages
         div(class=['messageWrapper']) 
-          a(href="/"): li(class=['user']) #{val.user}
+          a(href=`mailto:${val.email} `): li(class=['user']) #{val.user}
           img(class=['avatar'] src=val.avatar)
           li(class=['added']) #{val.added}
           br
