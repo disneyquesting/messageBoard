@@ -29,8 +29,9 @@ a {
     text-decoration: none;
     color: darkolivegreen
   }
+
   .text {
-    display: flex;/
+    display: flex;
     flex-direction: column;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
@@ -57,7 +58,16 @@ a {
   background-color:honeydew;
 }
 
+.messageWrapper:nth-child(odd):hover{
+  align-self: start;
+  background-color:yellow;
+}
+
 .messageWrapper:nth-child(even){
   align-self: end;
   background-color: lightcyan;
+}
+.messageWrapper:nth-child(even):hover{
+  align-self: end;
+  background-color:  purple;
 }
